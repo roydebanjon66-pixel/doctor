@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ma Oral &amp; Dental Care | Dr. Md. Rezaul Karim Raki — Dhaka Cantonment</title>
+  <meta name="description" content="Ma Oral &amp; Dental Care — Dr. Md. Rezaul Karim Raki, BDS (Rajshahi), MPH, Assistant Professor &amp; Oral Surgery PGT. Professional dental care at Manikdi Bazar, Dhaka Cantonment. Call 01716415402." />
+  <meta name="keywords" content="Dr Rezaul Karim Raki, dental clinic Dhaka Cantonment, Ma Oral Dental Care, BDS dentist Dhaka, teeth cleaning Manikdi Bazar, root canal Dhaka, oral surgery Bangladesh, BMDC dentist" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* ═══════════════════════════════════════════
+       SINGLE-DOCTOR HERO LAYOUT
+    ═══════════════════════════════════════════ */
+    .hero--single { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+
+    .hero-single__inner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 480px;
+      gap: 60px;
+      align-items: center;
+      padding: 120px 0 60px;
+    }
+
+    /* Left Text */
+    .hero-single__text { color: #fff; }
+
+    .hero-single__badge-row {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;
+    }
+    .hero-single__badge-pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff; border-radius: 50px;
+      padding: 6px 16px; font-size: 0.8rem; font-weight: 600;
+    }
+    .hero-single__badge-pill--accent {
+      background: rgba(0,198,251,0.25); border-color: rgba(0,198,251,0.5);
+    }
+
+    .hero-single__clinic-name {
+      font-size: 0.9rem; font-weight: 700; color: #00c6fb;
+      letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 10px;
+    }
+
+    .hero-single__name {
+      font-size: clamp(2rem, 4vw, 2.9rem); font-weight: 900;
+      line-height: 1.15; margin: 0 0 18px; color: #fff;
+    }
+    .hero-single__name span { color: #00c6fb; }
+
+    .hero-single__quals {
+      display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px;
+    }
+    .hero-single__quals span {
+      font-size: 0.88rem; color: rgba(255,255,255,0.88);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .hero-single__quals span i { color: #00c6fb; font-size: 0.8rem; }
+
+    .hero-single__tagline {
+      font-size: 1.05rem; color: rgba(255,255,255,0.85);
+      margin-bottom: 20px; font-style: italic;
+      border-left: 3px solid #00c6fb; padding-left: 14px;
+    }
+
+    .hero-single__feature-row {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 28px;
+    }
+    .hero-single__feature {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.84rem; color: rgba(255,255,255,0.9); font-weight: 500;
+    }
+    .hero-single__feature i { color: #00c6fb; }
+
+    .hero-single__btns {
+      display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 36px;
+    }
+
+    .hero-single__stats {
+      display: flex; align-items: center; gap: 24px;
+      background: rgba(255,255,255,0.1); backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.2); border-radius: 16px;
+      padding: 18px 24px;
+    }
+    .hero-single__stat { text-align: center; }
+    .hero-single__stat-num {
+      font-size: 1.5rem; font-weight: 900; color: #fff; line-height: 1;
+    }
+    .hero-single__stat-label {
+      font-size: 0.7rem; color: rgba(255,255,255,0.7);
+      text-transform: uppercase; letter-spacing: 0.06em; margin-top: 4px;
+    }
+    .hero-single__stat-divider {
+      width: 1px; height: 40px; background: rgba(255,255,255,0.25); flex-shrink: 0;
+    }
+
+    /* Right Image */
+    .hero-single__image-col { position: relative; }
+    .hero-single__image-wrap {
+      position: relative; width: 420px; height: 520px; margin: 0 auto;
+    }
+
+    .hero-single__ring {
+      position: absolute; border-radius: 50%;
+      border: 2px solid rgba(0,198,251,0.35);
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      animation: ring-pulse 3s ease-in-out infinite;
+    }
+    .hero-single__ring--1 { width: 420px; height: 420px; animation-delay: 0s; }
+    .hero-single__ring--2 { width: 470px; height: 470px; animation-delay: 0.8s; border-color: rgba(0,122,255,0.2); }
+    .hero-single__ring--3 { width: 520px; height: 520px; animation-delay: 1.6s; border-color: rgba(0,198,251,0.1); }
+    @keyframes ring-pulse {
+      0%, 100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+      50% { opacity: 0.4; transform: translate(-50%, -50%) scale(1.04); }
+    }
+
+    .hero-single__photo-frame {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 340px; height: 420px;
+      border-radius: 50% 50% 46% 46% / 54% 54% 46% 46%;
+      overflow: hidden;
+      border: 4px solid rgba(0,198,251,0.55);
+      box-shadow: 0 0 0 8px rgba(0,198,251,0.1), 0 24px 60px rgba(0,0,0,0.55);
+      background: linear-gradient(180deg, #0a1628, #1a3a6e);
+    }
+    .hero-single__photo {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: top center; display: block;
+    }
+
+    .hero-single__float-badge {
+      position: absolute;
+      display: flex; align-items: center; gap: 10px;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(10px);
+      border-radius: 14px; padding: 12px 18px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      animation: float-badge 4s ease-in-out infinite;
+      z-index: 10; min-width: 170px;
+    }
+    .hero-single__float-badge i { font-size: 1.4rem; color: #007aff; }
+    .hero-single__float-badge strong { display: block; font-size: 0.68rem; color: #999; text-transform: uppercase; letter-spacing: 0.05em; }
+    .hero-single__float-badge span { font-size: 0.88rem; font-weight: 800; color: #1a1a2e; }
+    .hero-single__float-badge--top { top: 30px; left: -20px; animation-delay: 0s; }
+    .hero-single__float-badge--bottom { bottom: 30px; right: -20px; animation-delay: 1.5s; }
+    @keyframes float-badge {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .hero-single__status {
+      position: absolute; top: -10px; right: 10px;
+      background: #27ae60; color: #fff; border-radius: 50px;
+      padding: 7px 16px; font-size: 0.78rem; font-weight: 700;
+      display: flex; align-items: center; gap: 6px;
+      box-shadow: 0 4px 14px rgba(39,174,96,0.45); z-index: 10;
+    }
+    .hero-single__status-dot {
+      width: 8px; height: 8px; background: #fff; border-radius: 50%;
+      display: inline-block; animation: pulse-dot 1.5s infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.4); }
+    }
+
+    @media (max-width: 1024px) {
+      .hero-single__inner { grid-template-columns: 1fr; padding: 130px 0 60px; gap: 40px; }
+      .hero-single__image-col { display: flex; justify-content: center; }
+      .hero-single__image-wrap { width: 320px; height: 400px; }
+      .hero-single__photo-frame { width: 280px; height: 340px; }
+      .hero-single__ring--1 { width: 330px; height: 330px; }
+      .hero-single__ring--2 { width: 375px; height: 375px; }
+      .hero-single__ring--3 { width: 420px; height: 420px; }
+    }
+    @media (max-width: 600px) {
+      .hero-single__name { font-size: 1.8rem; }
+      .hero-single__feature-row { grid-template-columns: 1fr; }
+      .hero-single__stats { flex-wrap: wrap; gap: 16px; }
+      .hero-single__float-badge--top { left: 0; }
+      .hero-single__float-badge--bottom { right: 0; }
+    }
+
+    /* ── Doctor Profile Section ── */
+
+    .doctor-profile {
+      padding: 100px 0 80px;
+      background: linear-gradient(160deg, #f0f6ff 0%, #ffffff 60%);
+      position: relative;
+      overflow: hidden;
+    }
+    .doctor-profile::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(0,122,255,0.07) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .doctor-profile::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -80px;
+      width: 350px; height: 350px;
+      background: radial-gradient(circle, rgba(0,198,251,0.06) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .doctor-profile__inner {
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    /* ── Left: Doctor Image Card ── */
+    .doctor-profile__image-col {
+      position: sticky;
+      top: 100px;
+    }
+    .doctor-profile__image-wrap {
+      position: relative;
+      border-radius: 24px;
+      overflow: visible;
+    }
+    .doctor-profile__img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 24px;
+      box-shadow: 0 24px 72px rgba(0,0,0,0.16);
+      display: block;
+    }
+    .doctor-profile__badge-bmdc {
+      position: absolute;
+      top: -16px; left: -16px;
+      background: linear-gradient(135deg, #007aff, #00c6fb);
+      color: #fff;
+      border-radius: 16px;
+      padding: 14px 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,122,255,0.4);
+      min-width: 130px;
+      z-index: 2;
+    }
+    .doctor-profile__badge-bmdc-num {
+      font-size: 1.3rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+    .doctor-profile__badge-bmdc-text {
+      font-size: 0.7rem;
+      opacity: 0.92;
+      margin-top: 4px;
+    }
+    .doctor-profile__badge-status {
+      position: absolute;
+      bottom: -16px; right: -16px;
+      background: #27ae60;
+      color: #fff;
+      border-radius: 14px;
+      padding: 12px 18px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      box-shadow: 0 8px 24px rgba(39,174,96,0.35);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      z-index: 2;
+    }
+    .doctor-profile__badge-status::before {
+      content: '';
+      width: 8px; height: 8px;
+      background: #fff;
+      border-radius: 50%;
+      display: inline-block;
+      animation: pulse-dot 1.5s infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+    .doctor-profile__quick-contact {
+      margin-top: 32px;
+      background: #fff;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      border: 1px solid #e8f0fe;
+    }
+    .doctor-profile__quick-contact h4 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #888;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+    .doctor-profile__contact-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 0.9rem;
+      color: #333;
+      text-decoration: none;
+    }
+    .doctor-profile__contact-row:last-child { border-bottom: none; }
+    .doctor-profile__contact-row i {
+      width: 34px; height: 34px;
+      border-radius: 10px;
+      background: #f0f6ff;
+      color: #007aff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+    .doctor-profile__contact-row strong { display: block; font-size: 0.75rem; color: #999; }
+    .doctor-profile__contact-row span { font-weight: 600; color: #1a1a2e; }
+    /* ── Right: Doctor Info ── */
+    .doctor-profile__text-col {}
+    .doctor-profile__name-row {
+      margin-bottom: 8px;
+    }
+    .doctor-profile__name {
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: #1a1a2e;
+      line-height: 1.15;
+      margin: 0 0 6px;
+    }
+    .doctor-profile__name span { color: #007aff; }
+    .doctor-profile__tagline {
+      font-size: 1rem;
+      color: #007aff;
+      font-weight: 600;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .doctor-profile__tagline::before {
+      content: '';
+      width: 32px; height: 3px;
+      background: linear-gradient(90deg, #007aff, #00c6fb);
+      border-radius: 2px;
+      display: inline-block;
+    }
+    /* Credentials Card */
+    .doctor-credentials {
+      background: #fff;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      border: 1px solid #e8f0fe;
+      margin-bottom: 28px;
+    }
+    .doctor-credentials__title {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #888;
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .doctor-credentials__title::after {
+      content: '';
+      flex: 1; height: 1px; background: #eee;
+    }
+    .doctor-credentials__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .doctor-credentials__item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 12px 14px;
+      background: #f8faff;
+      border-radius: 12px;
+      border-left: 3px solid #007aff;
+    }
+    .doctor-credentials__item i {
+      color: #007aff;
+      font-size: 0.9rem;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+    .doctor-credentials__item-text strong {
+      display: block;
+      font-size: 0.78rem;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 2px;
+    }
+    .doctor-credentials__item-text span {
+      font-size: 0.88rem;
+      color: #1a1a2e;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    /* Hours Card */
+    .doctor-hours-card {
+      background: linear-gradient(135deg, #007aff, #00c6fb);
+      border-radius: 20px;
+      padding: 24px 28px;
+      color: #fff;
+      margin-bottom: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    .doctor-hours-card::before {
+      content: '\f017';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position: absolute;
+      right: 20px; top: 50%;
+      transform: translateY(-50%);
+      font-size: 5rem;
+      opacity: 0.1;
+    }
+    .doctor-hours-card h4 {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      opacity: 0.8;
+      margin-bottom: 10px;
+    }
+    .doctor-hours-card__time {
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .doctor-hours-card__day {
+      font-size: 0.9rem;
+      opacity: 0.88;
+    }
+    .doctor-hours-card__note {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255,255,255,0.25);
+      font-size: 0.82rem;
+      opacity: 0.9;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    /* Address Card */
+    .doctor-address-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 24px 28px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      border: 1px solid #e8f0fe;
+      margin-bottom: 28px;
+    }
+    .doctor-address-card h4 {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #888;
+      font-weight: 700;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .doctor-address-card h4 i { color: #007aff; }
+    .doctor-address-card p {
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.9;
+      margin: 0;
+    }
+    .doctor-address-card p strong { color: #1a1a2e; }
+    /* CTA Buttons */
+    .doctor-profile__cta {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 960px) {
+      .doctor-profile__inner { grid-template-columns: 1fr; gap: 40px; }
+      .doctor-profile__image-col { position: static; }
+      .doctor-profile__img { height: 380px; }
+      .doctor-credentials__grid { grid-template-columns: 1fr; }
+      .doctor-profile__name { font-size: 1.9rem; }
+    }
+
+    /* ── Hero adjustments — keep structure, update content only ── */
+    .hero__brand-subtitle { font-size: 0.88rem !important; }
+  </style>
+</head>
+
+<body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div id="scrollProgress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- PAGE PRELOADER -->
+  <div id="preloader" class="preloader" role="status" aria-label="Loading">
+    <div class="preloader__inner">
+      <div class="preloader__logo"><i class="fa-solid fa-tooth"></i></div>
+      <div class="preloader__text">মা ওরাল এন্ড ডেন্টাল কেয়ার</div>
+      <div class="preloader__bar"><div class="preloader__fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ================================================
+       STICKY NAVBAR
+  ================================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">
+          <img src="logo.png" alt="Ma Oral &amp; Dental Care" class="navbar__logo-img" />
+        </a>
+        <ul class="navbar__links" id="navLinks">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Doctor</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#appointment" class="navbar__cta">Book Appointment</a></li>
+        </ul>
+        <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================================================
+       HERO SECTION — Single Doctor Layout
+  ================================================ -->
+  <section class="hero hero--single" id="hero">
+    <video class="hero__video-bg" autoplay muted loop playsinline>
+      <source src="dental-video.mp4.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__overlay"></div>
+
+    <!-- Particles -->
+    <div class="hero__particles" aria-hidden="true">
+      <div class="particle p1"></div><div class="particle p2"></div>
+      <div class="particle p3"></div><div class="particle p4"></div>
+      <div class="particle p5"></div><div class="particle p6"></div>
+      <div class="particle p7"></div><div class="particle p8"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-single__inner">
+
+        <!-- LEFT: Text Content -->
+        <div class="hero-single__text entrance-left">
+
+          <div class="hero-single__badge-row">
+            <span class="hero-single__badge-pill">
+              <i class="fa-solid fa-shield-halved"></i> Trusted Dental Surgeon
+            </span>
+            <span class="hero-single__badge-pill hero-single__badge-pill--accent">
+              <i class="fa-solid fa-location-dot"></i> Dhaka Cantonment
+            </span>
+          </div>
+
+          <div class="hero-single__clinic-name">মা ওরাল এন্ড ডেন্টাল কেয়ার</div>
+
+          <h1 class="hero-single__name">
+            Dr. Md. <span>Rezaul Karim</span> Raki
+          </h1>
+
+          <div class="hero-single__quals">
+            <span><i class="fa-solid fa-graduation-cap"></i> BDS (Rajshahi)</span>
+            <span><i class="fa-solid fa-flask"></i> MPH (NIPSOM)</span>
+            <span><i class="fa-solid fa-hospital"></i> PGT — Oral &amp; Maxillofacial Surgery</span>
+            <span><i class="fa-solid fa-chalkboard-teacher"></i> Assistant Professor, Udayan Dental College</span>
+          </div>
+
+          <p class="hero-single__tagline">
+            Advanced Oral &amp; Dental Care for Every Patient
+          </p>
+
+          <div class="hero-single__feature-row">
+            <div class="hero-single__feature"><i class="fa-solid fa-circle-check"></i> Certified Surgeon</div>
+            <div class="hero-single__feature"><i class="fa-solid fa-circle-check"></i> Modern Equipment</div>
+            <div class="hero-single__feature"><i class="fa-solid fa-circle-check"></i> Affordable Care</div>
+            <div class="hero-single__feature"><i class="fa-solid fa-circle-check"></i> BMDC Reg: 3856</div>
+          </div>
+
+          <div class="hero-single__btns">
+            <a href="#appointment" class="btn btn--primary btn--shine" id="hero-book-btn">
+              <i class="fa-solid fa-calendar-check"></i> Book Appointment
+            </a>
+            <a href="tel:01716415402" class="btn btn--outline" id="hero-call-btn">
+              <i class="fa-solid fa-phone"></i> 01716-415402
+            </a>
+          </div>
+
+          <!-- Stats Row -->
+          <div class="hero-single__stats">
+            <div class="hero-single__stat">
+              <div class="hero-single__stat-num">3856</div>
+              <div class="hero-single__stat-label">BMDC Reg. No.</div>
+            </div>
+            <div class="hero-single__stat-divider"></div>
+            <div class="hero-single__stat">
+              <div class="hero-single__stat-num">10+</div>
+              <div class="hero-single__stat-label">Dental Services</div>
+            </div>
+            <div class="hero-single__stat-divider"></div>
+            <div class="hero-single__stat">
+              <div class="hero-single__stat-num">Daily</div>
+              <div class="hero-single__stat-label">5 PM – 10 PM</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: Doctor Image -->
+        <div class="hero-single__image-col entrance-right">
+          <div class="hero-single__image-wrap">
+
+            <!-- HUD Rings -->
+            <div class="hero-single__ring hero-single__ring--1"></div>
+            <div class="hero-single__ring hero-single__ring--2"></div>
+            <div class="hero-single__ring hero-single__ring--3"></div>
+
+            <!-- Doctor Photo -->
+            <div class="hero-single__photo-frame">
+              <img src="dr_rezaul.png" alt="Dr. Md. Rezaul Karim Raki — Oral &amp; Dental Surgeon, Dhaka Cantonment" class="hero-single__photo" />
+            </div>
+
+            <!-- Floating BMDC Badge -->
+            <div class="hero-single__float-badge hero-single__float-badge--top">
+              <i class="fa-solid fa-certificate"></i>
+              <div>
+                <strong>BMDC Reg. No.</strong>
+                <span>3856</span>
+              </div>
+            </div>
+
+            <!-- Floating Hours Badge -->
+            <div class="hero-single__float-badge hero-single__float-badge--bottom">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Visiting Hours</strong>
+                <span>Daily 5 PM – 10 PM</span>
+              </div>
+            </div>
+
+            <!-- Floating Status Dot -->
+            <div class="hero-single__status">
+              <span class="hero-single__status-dot"></span> Open Now
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave Divider -->
+  <div class="wave-divider wave-divider--white" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#ffffff"/></svg>
+  </div>
+
+  <!-- ================================================
+       TRUST BAR
+  ================================================ -->
+  <section class="trust-bar" id="trust">
+    <div class="container">
+      <div class="trust-bar__grid">
+        <div class="trust-bar__item">
+          <div class="trust-bar__icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="trust-bar__info">
+            <strong>BDS · MPH · PGT</strong>
+            <span>Rajshahi &amp; BSMMU Trained</span>
+          </div>
+        </div>
+        <div class="trust-bar__item">
+          <div class="trust-bar__icon"><i class="fa-solid fa-certificate"></i></div>
+          <div class="trust-bar__info">
+            <strong>BMDC Registered</strong>
+            <span>Reg. No: 3856</span>
+          </div>
+        </div>
+        <div class="trust-bar__item">
+          <div class="trust-bar__icon"><i class="fa-solid fa-tooth"></i></div>
+          <div class="trust-bar__info">
+            <strong>Complete Dental Care</strong>
+            <span>10+ Dental Services</span>
+          </div>
+        </div>
+        <div class="trust-bar__item">
+          <div class="trust-bar__icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="trust-bar__info">
+            <strong>Daily Availability</strong>
+            <span>Every Day: 5PM – 10PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       DOCTOR PROFILE SECTION
+  ================================================ -->
+  <section class="doctor-profile" id="about">
+    <div class="container">
+      <div class="section-header" style="margin-bottom:60px;">
+        <div class="section-header__tag">Meet Your Doctor</div>
+        <h2>Expert &amp; <span>Experienced</span> Dental Surgeon</h2>
+        <p>Dedicated to providing compassionate, modern, and affordable dental care for every patient.</p>
+        <div class="section-divider"><span class="section-divider__dot"></span></div>
+      </div>
+
+      <div class="doctor-profile__inner entrance-bottom">
+
+        <!-- Left: Image & Quick Contact -->
+        <div class="doctor-profile__image-col">
+          <div class="doctor-profile__image-wrap">
+            <img src="dr_rezaul.png" alt="Dr. Md. Rezaul Karim Raki — Oral &amp; Dental Surgeon, Dhaka Cantonment" class="doctor-profile__img" />
+            <div class="doctor-profile__badge-bmdc">
+              <div class="doctor-profile__badge-bmdc-num">3856</div>
+              <div class="doctor-profile__badge-bmdc-text">BMDC Reg. No.</div>
+            </div>
+            <div class="doctor-profile__badge-status">
+              <i class="fa-solid fa-circle-dot" style="font-size:0.7rem;"></i> Open Daily 5PM–10PM
+            </div>
+          </div>
+
+          <!-- Quick Contact Card -->
+          <div class="doctor-profile__quick-contact">
+            <h4>Quick Contact</h4>
+            <a href="tel:01716415402" class="doctor-profile__contact-row">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Primary Phone</strong>
+                <span>01716-415402</span>
+              </div>
+            </a>
+            <a href="tel:01920045021" class="doctor-profile__contact-row">
+              <i class="fa-solid fa-phone-volume"></i>
+              <div>
+                <strong>Secondary Phone</strong>
+                <span>01920-045021</span>
+              </div>
+            </a>
+            <a href="mailto:rezaul.karim16bds@gmail.com" class="doctor-profile__contact-row">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <span style="font-size:0.78rem;">rezaul.karim16bds@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://wa.me/8801716415402" target="_blank" class="doctor-profile__contact-row">
+              <i class="fa-brands fa-whatsapp" style="color:#27ae60;background:#f0fff6;"></i>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>Chat with us</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Doctor Info -->
+        <div class="doctor-profile__text-col">
+          <div class="doctor-profile__name-row">
+            <p class="doctor-profile__tagline">Oral &amp; Dental Surgeon</p>
+            <h2 class="doctor-profile__name">Dr. Md. <span>Rezaul Karim Raki</span></h2>
+          </div>
+
+          <p style="color:#555;line-height:1.85;font-size:0.98rem;margin-bottom:28px;">
+            Dr. Md. Rezaul Karim Raki is a highly qualified and dedicated Oral &amp; Dental Surgeon with advanced training in Oral &amp; Maxillofacial Surgery. With a commitment to patient comfort and clinical excellence, he provides comprehensive dental care at মা ওরাল এন্ড ডেন্টাল কেয়ার, Manikdi Bazar, Dhaka Cantonment. From routine checkups to complex surgical procedures, every patient receives personalized, gentle, and professional care.
+          </p>
+
+          <!-- Qualifications -->
+          <div class="doctor-credentials">
+            <div class="doctor-credentials__title"><i class="fa-solid fa-graduation-cap" style="color:#007aff;"></i> Qualifications &amp; Training</div>
+            <div class="doctor-credentials__grid">
+              <div class="doctor-credentials__item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div class="doctor-credentials__item-text">
+                  <strong>Degree</strong>
+                  <span>BDS — University of Rajshahi</span>
+                </div>
+              </div>
+              <div class="doctor-credentials__item">
+                <i class="fa-solid fa-microscope"></i>
+                <div class="doctor-credentials__item-text">
+                  <strong>Masters</strong>
+                  <span>MPH — NIPSOM, Mohakhali</span>
+                </div>
+              </div>
+              <div class="doctor-credentials__item">
+                <i class="fa-solid fa-chalkboard-teacher"></i>
+                <div class="doctor-credentials__item-text">
+                  <strong>Academic Position</strong>
+                  <span>Assistant Professor, Udayan Dental College, Rajshahi</span>
+                </div>
+              </div>
+              <div class="doctor-credentials__item">
+                <i class="fa-solid fa-hospital"></i>
+                <div class="doctor-credentials__item-text">
+                  <strong>Surgical Training</strong>
+                  <span>PGT — Oral &amp; Maxillofacial Surgery, BSMMU (PG Hospital)</span>
+                </div>
+              </div>
+              <div class="doctor-credentials__item">
+                <i class="fa-solid fa-id-card"></i>
+                <div class="doctor-credentials__item-text">
+                  <strong>BMDC Registration</strong>
+                  <span>Reg. No: 3856 (Verified)</span>
+                </div>
+              </div>
+              <div class="doctor-credentials__item">
+                <i class="fa-solid fa-stethoscope"></i>
+                <div class="doctor-credentials__item-text">
+                  <strong>Specialization</strong>
+                  <span>Oral &amp; Maxillofacial Surgery</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visiting Hours -->
+          <div class="doctor-hours-card">
+            <h4><i class="fa-solid fa-clock"></i> Patient Visiting Hours</h4>
+            <div class="doctor-hours-card__time">5:00 PM – 10:00 PM</div>
+            <div class="doctor-hours-card__day"><i class="fa-solid fa-calendar-check"></i> Every Day (Saturday – Thursday)</div>
+            <div class="doctor-hours-card__note">
+              <i class="fa-solid fa-phone"></i>
+              Appointments: <a href="tel:01716415402" style="color:#fff;font-weight:700;">01716-415402</a> &nbsp;|&nbsp;
+              <a href="tel:01920045021" style="color:#fff;font-weight:700;">01920-045021</a>
+            </div>
+          </div>
+
+          <!-- Chamber Address -->
+          <div class="doctor-address-card">
+            <h4><i class="fa-solid fa-location-dot"></i> Chamber Address</h4>
+            <p>
+              <strong>মা ওরাল এন্ড ডেন্টাল কেয়ার</strong><br>
+              637 Besh Villa (৬৩৭ বেশ ভিলা)<br>
+              মানিকদী বাজার (Manikdi Bazar)<br>
+              ঢাকা ক্যান্টনমেন্ট (Dhaka Cantonment)<br>
+              ঢাকা-১২০৬, বাংলাদেশ
+            </p>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="doctor-profile__cta">
+            <a href="#appointment" class="btn btn--blue" id="about-book-btn">
+              <i class="fa-solid fa-calendar-check"></i> Book Appointment
+            </a>
+            <a href="tel:01716415402" class="btn btn--call" id="about-call-btn">
+              <i class="fa-solid fa-phone"></i> Call: 01716-415402
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SERVICES SECTION
+  ================================================ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__tag">Our Dental Services</div>
+        <h2>What We <span>Offer</span></h2>
+        <p>Comprehensive dental care services by Dr. Rezaul Karim Raki — tailored to your needs with expertise and compassion.</p>
+        <div class="section-divider"><span class="section-divider__dot"></span></div>
+      </div>
+
+      <div class="services__grid">
+
+        <div class="service-card">
+          <img src="1.png" alt="Dental Check-Up" class="service-card__img" />
+          <div class="service-card__body">
+            <div class="service-card__icon">🦷</div>
+            <h3>Dental Check-Up</h3>
+            <p>Comprehensive oral examination for early detection of issues and maintaining lifelong dental health.</p>
+            <a href="services.html" class="btn--sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="2.png" alt="Teeth Cleaning &amp; Scaling" class="service-card__img" />
+          <div class="service-card__body">
+            <div class="service-card__icon">✨</div>
+            <h3>Teeth Cleaning &amp; Scaling</h3>
+            <p>Professional scaling and polishing to remove plaque and tartar for a healthier, brighter smile.</p>
+            <a href="services.html" class="btn--sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="3.png" alt="Root Canal Treatment" class="service-card__img" />
+          <div class="service-card__body">
+            <div class="service-card__icon">🩺</div>
+            <h3>Root Canal Treatment</h3>
+            <p>Pain-free root canal therapy by an OMS-trained specialist to save and restore your natural tooth.</p>
+            <a href="services.html" class="btn--sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="4.png" alt="Tooth Filling" class="service-card__img" />
+          <div class="service-card__body">
+            <div class="service-card__icon">🦴</div>
+            <h3>Tooth Filling</h3>
+            <p>High-quality composite and amalgam fillings to restore decayed teeth to their natural function.</p>
+            <a href="services.html" class="btn--sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="5.png" alt="Tooth Extraction" class="service-card__img" />
+          <div class="service-card__body">
+            <div class="service-card__icon">🦷</div>
+            <h3>Tooth Extraction</h3>
+            <p>Safe and painless tooth extraction procedures performed with expert surgical precision.</p>
+            <a href="services.html" class="btn--sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="teeth_whitening.png" alt="Cosmetic Dentistry" class="service-card__img" />
+          <div class="service-card__body">
+            <div class="service-card__icon">🌟</div>
+            <h3>Cosmetic Dentistry</h3>
+            <p>Transform your smile with professional teeth whitening, veneers, and smile makeover treatments.</p>
+            <a href="services.html" class="btn--sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:44px;">
+        <a href="services.html" class="btn btn--blue" id="view-services-btn">
+          View All Services <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       WHY CHOOSE US
+  ================================================ -->
+  <section class="why-us" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__tag">Why Choose Us</div>
+        <h2>The <span>মা ডেন্টাল</span> Difference</h2>
+        <p>At মা ওরাল এন্ড ডেন্টাল কেয়ার, Dhaka Cantonment, we go beyond treatment — delivering a complete, comfortable, and expert experience for every patient.</p>
+        <div class="section-divider"><span class="section-divider__dot"></span></div>
+      </div>
+      <div class="why-us__grid">
+        <div class="why-us__card">
+          <div class="why-us__icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Highly Qualified Surgeon</h3>
+          <p>Dr. Rezaul Karim Raki holds BDS (Rajshahi), MPH (NIPSOM), and completed advanced PGT in Oral &amp; Maxillofacial Surgery at BSMMU.</p>
+        </div>
+        <div class="why-us__card">
+          <div class="why-us__icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <h3>Personalized Patient Care</h3>
+          <p>We listen to each patient's concerns and create tailored treatment plans for the best possible outcomes.</p>
+        </div>
+        <div class="why-us__card">
+          <div class="why-us__icon"><i class="fa-solid fa-microscope"></i></div>
+          <h3>Modern Dental Equipment</h3>
+          <p>We use the latest dental technology with strict sterilization protocols to ensure your safety and comfort.</p>
+        </div>
+        <div class="why-us__card">
+          <div class="why-us__icon"><i class="fa-solid fa-face-smile"></i></div>
+          <h3>Comfortable &amp; Hygienic Clinic</h3>
+          <p>Our clinic is designed to ease dental anxiety — clean, calm, and patient-friendly at every step of your visit.</p>
+        </div>
+        <div class="why-us__card">
+          <div class="why-us__icon"><i class="fa-solid fa-bangladeshi-taka-sign"></i></div>
+          <h3>Affordable Dental Treatments</h3>
+          <p>High-quality dental care at transparent, affordable prices — making oral health accessible for all families.</p>
+        </div>
+        <div class="why-us__card">
+          <div class="why-us__icon"><i class="fa-solid fa-clock"></i></div>
+          <h3>Daily Evening Availability</h3>
+          <p>Open every day from 5:00 PM to 10:00 PM — convenient hours for working professionals and families.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       PATIENT TESTIMONIALS
+  ================================================ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__tag">Patient Reviews</div>
+        <h2>What Our <span>Patients Say</span></h2>
+        <p>Real experiences from real patients who trust Dr. Rezaul Karim Raki with their smiles.</p>
+        <div class="section-divider"><span class="section-divider__dot"></span></div>
+      </div>
+      <div class="testimonials__grid">
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Dr. Rezaul Karim Raki is an amazing dentist! My root canal was completely painless. The clinic is very clean and the doctor is so professional and caring. Highly recommended for anyone in Dhaka Cantonment!"</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">A</div>
+            <div class="testimonial-card__info">
+              <strong>Ayesha Rahman</strong>
+              <span>Verified Patient — Manikdi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Best dental clinic in Dhaka Cantonment! Dr. Rezaul is very knowledgeable and explains everything clearly. The evening hours are super convenient. My whole family visits here now."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">R</div>
+            <div class="testimonial-card__info">
+              <strong>Rafiq Ahmed</strong>
+              <span>Verified Patient — Cantonment</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Excellent service at মা ওরাল এন্ড ডেন্টাল কেয়ার. The doctor is very experienced and the treatment was affordable. I'm very happy with my teeth cleaning result. Will definitely come back!"</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">S</div>
+            <div class="testimonial-card__info">
+              <strong>Sara Begum</strong>
+              <span>Verified Patient — Dhaka</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"I was very scared of dental treatments but Dr. Rezaul Karim made the whole process very comfortable. His professional training really shows. Outstanding dental care at an affordable price!"</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">M</div>
+            <div class="testimonial-card__info">
+              <strong>Mohammad Hasan</strong>
+              <span>Verified Patient — Cantonment</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       GALLERY
+  ================================================ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__tag">Clinic Gallery</div>
+        <h2>Inside Our <span>Clinic</span></h2>
+        <p>A modern, clean, and welcoming environment designed with your comfort in mind.</p>
+        <div class="section-divider"><span class="section-divider__dot"></span></div>
+      </div>
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--wide">
+          <img src="clinic_interior.png" alt="Ma Oral &amp; Dental Care — Clinic Interior" />
+          <div class="gallery__overlay"><span>Clinic Interior</span></div>
+        </div>
+        <div class="gallery__item">
+          <img src="2.png" alt="Dental Equipment" />
+          <div class="gallery__overlay"><span>Modern Equipment</span></div>
+        </div>
+        <div class="gallery__item">
+          <img src="3.png" alt="Teeth Cleaning" />
+          <div class="gallery__overlay"><span>Teeth Cleaning</span></div>
+        </div>
+        <div class="gallery__item">
+          <img src="dental_checkup.png" alt="Dental Checkup" />
+          <div class="gallery__overlay"><span>Dental Checkup</span></div>
+        </div>
+        <div class="gallery__item">
+          <img src="5.png" alt="Dental Care" />
+          <div class="gallery__overlay"><span>Expert Care</span></div>
+        </div>
+        <div class="gallery__item gallery__item--wide">
+          <img src="dental_doctor_care.png" alt="Patient Treatment" />
+          <div class="gallery__overlay"><span>Patient Treatment</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       VISITING HOURS
+  ================================================ -->
+  <section class="hours" id="hours">
+    <div class="container">
+      <div class="hours__inner">
+        <div class="hours__text">
+          <div class="section-header__tag">Schedule</div>
+          <h2>Visiting <span>Hours</span></h2>
+          <p>Dr. Rezaul Karim Raki is available every day for evening consultations at মা ওরাল এন্ড ডেন্টাল কেয়ার. Walk-ins are welcome.</p>
+          <div class="hours__special">
+            <i class="fa-solid fa-circle-dot" style="color:#27ae60;"></i>
+            <span><strong>Currently Open:</strong> Daily 5:00 PM – 10:00 PM</span>
+          </div>
+          <a href="#appointment" class="btn btn--blue" style="margin-top:24px;" id="hours-book-btn">
+            <i class="fa-solid fa-calendar-check"></i> Book Appointment
+          </a>
+        </div>
+        <div class="hours__schedule">
+          <div class="hours__row">
+            <div class="hours__day"><i class="fa-solid fa-calendar-xmark"></i> Friday</div>
+            <div class="hours__time hours__closed">Closed</div>
+          </div>
+          <div class="hours__divider"></div>
+          <div class="hours__row hours__row--active">
+            <div class="hours__day"><i class="fa-solid fa-calendar-day"></i> Saturday</div>
+            <div class="hours__time">5:00 PM &ndash; 10:00 PM</div>
+          </div>
+          <div class="hours__divider"></div>
+          <div class="hours__row hours__row--active">
+            <div class="hours__day"><i class="fa-solid fa-calendar-day"></i> Sunday</div>
+            <div class="hours__time">5:00 PM &ndash; 10:00 PM</div>
+          </div>
+          <div class="hours__divider"></div>
+          <div class="hours__row hours__row--active">
+            <div class="hours__day"><i class="fa-solid fa-calendar-day"></i> Mon &ndash; Wed</div>
+            <div class="hours__time">5:00 PM &ndash; 10:00 PM</div>
+          </div>
+          <div class="hours__divider"></div>
+          <div class="hours__row hours__row--active">
+            <div class="hours__day"><i class="fa-solid fa-calendar-day"></i> Thursday</div>
+            <div class="hours__time">5:00 PM &ndash; 10:00 PM</div>
+          </div>
+          <div class="hours__note">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>Call: <a href="tel:01716415402">01716-415402</a> &nbsp;|&nbsp; <a href="tel:01920045021">01920-045021</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       CONTACT SECTION
+  ================================================ -->
+  <section class="contact" id="contact">
+    <div class="container--narrow">
+      <div class="contact__card">
+        <div class="contact__top">
+          <h2>&#x1F4CD; Find Us &amp; Book a Visit</h2>
+          <p>মা ওরাল এন্ড ডেন্টাল কেয়ার — Dr. Md. Rezaul Karim Raki is here to serve you every evening.</p>
+        </div>
+        <div class="contact__info">
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="contact__item-label">Primary Phone</div>
+              <div class="contact__item-val"><a href="tel:01716415402" style="color:inherit;text-decoration:none;font-weight:700;">01716-415402</a></div>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-solid fa-phone-volume"></i></div>
+            <div>
+              <div class="contact__item-label">Secondary Phone</div>
+              <div class="contact__item-val"><a href="tel:01920045021" style="color:inherit;text-decoration:none;font-weight:700;">01920-045021</a></div>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="contact__item-label">Email</div>
+              <div class="contact__item-val"><a href="mailto:rezaul.karim16bds@gmail.com" style="color:inherit;text-decoration:none;">rezaul.karim16bds@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="contact__item-label">Chamber Address</div>
+              <div class="contact__item-val">
+                637 Besh Villa (৬৩৭ বেশ ভিলা)<br>
+                মানিকদী বাজার, ঢাকা ক্যান্টনমেন্ট<br>
+                ঢাকা-১২০৬, বাংলাদেশ
+              </div>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <div class="contact__item-label">Visiting Hours</div>
+              <div class="contact__item-val" style="color:#007aff;font-weight:700;">Every Day: 5:00 PM – 10:00 PM</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact__buttons">
+          <a href="tel:01716415402" class="btn btn--call" id="contact-call-btn">
+            <i class="fa-solid fa-phone"></i> Call Now
+          </a>
+          <a href="https://wa.me/8801716415402" target="_blank" class="btn btn--whatsapp" id="contact-whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       APPOINTMENT FORM
+  ================================================ -->
+  <section class="appointment section" id="appointment">
+    <div class="container container--narrow">
+      <div class="appointment__card entrance-bottom">
+        <div class="section-header">
+          <div class="section-header__tag">Fast Booking</div>
+          <h2>Book an <span>Appointment</span></h2>
+          <p>Schedule your visit with Dr. Rezaul Karim Raki in less than a minute. We will contact you to confirm.</p>
+        </div>
+        <form id="appointmentForm" class="appointment-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name"><i class="fa-solid fa-user"></i> Full Name</label>
+              <input type="text" id="name" placeholder="Enter your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone"><i class="fa-solid fa-phone"></i> Phone Number</label>
+              <input type="tel" id="phone" placeholder="Enter your phone number" required />
+            </div>
+            <div class="form-group">
+              <label for="date"><i class="fa-solid fa-calendar-days"></i> Preferred Date</label>
+              <input type="date" id="date" required />
+            </div>
+            <div class="form-group">
+              <label for="service"><i class="fa-solid fa-tooth"></i> Select Treatment</label>
+              <select id="service" required>
+                <option value="">Select Treatment</option>
+                <option>Dental Check-Up</option>
+                <option>Teeth Cleaning &amp; Scaling</option>
+                <option>Tooth Filling</option>
+                <option>Root Canal Treatment</option>
+                <option>Tooth Extraction</option>
+                <option>Oral &amp; Maxillofacial Surgery</option>
+                <option>Dental Crowns &amp; Bridges</option>
+                <option>Cosmetic Dentistry</option>
+                <option>Teeth Whitening</option>
+                <option>Gum Care</option>
+                <option>Preventive Dental Care</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message"><i class="fa-solid fa-comment-dots"></i> Additional Notes</label>
+            <textarea id="message" placeholder="Any specific concerns or requests?"></textarea>
+          </div>
+          <button type="submit" class="btn btn--blue btn--shine w-100" id="submit-appointment-btn">
+            <i class="fa-solid fa-paper-plane"></i> Submit Appointment Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <div class="footer__logo"><span><i class="fa-solid fa-tooth"></i></span> মা ওরাল এন্ড ডেন্টাল কেয়ার</div>
+          <p>Healthy Smiles. Trusted Dental Care. — Expert dental care by Dr. Md. Rezaul Karim Raki, BDS · MPH · PGT (OMS), serving families at Manikdi Bazar, Dhaka Cantonment.</p>
+          <div class="footer__social">
+            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/8801716415402" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Doctor</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#testimonials">Patient Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Links -->
+        <div class="footer__col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services.html">Dental Check-Up</a></li>
+            <li><a href="services.html">Teeth Cleaning &amp; Scaling</a></li>
+            <li><a href="services.html">Root Canal Treatment</a></li>
+            <li><a href="services.html">Oral Surgery</a></li>
+            <li><a href="services.html">Cosmetic Dentistry</a></li>
+            <li><a href="services.html">Gum Care</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer__col">
+          <h4>Contact Dr. Rezaul</h4>
+          <ul>
+            <li><a href="#">&#x1F4CD; 637 Besh Villa, মানিকদী বাজার<br>ঢাকা ক্যান্টনমেন্ট, ঢাকা-১২০৬</a></li>
+            <li><a href="tel:01716415402">&#x1F4DE; 01716-415402</a></li>
+            <li><a href="tel:01920045021">&#x1F4DE; 01920-045021</a></li>
+            <li><a href="mailto:rezaul.karim16bds@gmail.com">&#x1F4E7; rezaul.karim16bds@gmail.com</a></li>
+            <li><a href="#" style="color:#007aff;">&#x1F55F; Daily: 5:00 PM – 10:00 PM</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 মা ওরাল এন্ড ডেন্টাল কেয়ার &mdash; Dr. Md. Rezaul Karim Raki, BDS · MPH · PGT (OMS) | BMDC Reg: 3856. All Rights Reserved. Designed with &#x2764;&#xFE0F; for Healthcare.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Social Buttons -->
+  <div class="social-float">
+    <a href="#" target="_blank" class="social-float__btn social-float__facebook" id="social-fb-btn">
+      <span class="social-tooltip">Facebook</span>
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="#" target="_blank" class="social-float__btn social-float__instagram" id="social-ig-btn">
+      <span class="social-tooltip">Instagram</span>
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+
+  <a href="https://wa.me/8801716415402" target="_blank" class="whatsapp-float" id="whatsappFloat" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-float__tooltip">Chat with us!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

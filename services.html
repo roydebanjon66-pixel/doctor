@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dental Services — Ma Oral &amp; Dental Care | Dr. Rezaul Karim Raki, Dhaka Cantonment</title>
+  <meta name="description" content="Explore dental services at Ma Oral &amp; Dental Care — Dental Check-Up, Teeth Cleaning, Root Canal, Tooth Extraction, Cosmetic Dentistry, Gum Care &amp; more by Dr. Md. Rezaul Karim Raki, BMDC Reg. 3856." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .services-hero {
+      padding: 140px 0 80px;
+      background: linear-gradient(135deg, #0a0e27 0%, #1a2a5e 60%, #0056d2 100%);
+      color: #fff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .services-hero h1 { font-size: 2.6rem; font-weight: 900; margin-bottom: 12px; }
+    .services-hero h1 span { color: #00c6fb; }
+    .services-hero p { font-size: 1rem; opacity: 0.85; max-width: 580px; margin: 0 auto 24px; }
+    .services-hero__breadcrumb { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.85rem; opacity: 0.7; }
+    .services-hero__breadcrumb a { color: #fff; text-decoration: none; }
+    .services-hero__breadcrumb span { color: #00c6fb; }
+
+    /* Services Grid */
+    .services-page { padding: 80px 0; background: #f8faff; }
+    .services-grid-full {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 28px;
+      margin-top: 48px;
+    }
+    .service-card-pro {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      border: 1px solid #eef2ff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+    .service-card-pro:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 48px rgba(0,122,255,0.13);
+    }
+    .service-card-pro__img {
+      width: 100%; height: 210px; object-fit: cover; display: block;
+    }
+    .service-card-pro__num {
+      position: absolute;
+      top: 16px; left: 16px;
+      background: linear-gradient(135deg, #007aff, #00c6fb);
+      color: #fff;
+      border-radius: 10px;
+      padding: 6px 12px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .service-card-pro__body { padding: 24px; }
+    .service-card-pro__icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .service-card-pro__body h3 { font-size: 1.08rem; font-weight: 800; color: #1a1a2e; margin-bottom: 8px; }
+    .service-card-pro__body p { font-size: 0.87rem; color: #666; line-height: 1.65; margin-bottom: 18px; }
+    .service-card-pro__body a {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: linear-gradient(135deg, #007aff, #00c6fb);
+      color: #fff; text-decoration: none;
+      border-radius: 10px; padding: 10px 20px;
+      font-size: 0.83rem; font-weight: 700;
+      transition: opacity 0.2s;
+    }
+    .service-card-pro__body a:hover { opacity: 0.9; }
+
+    /* CTA Section */
+    .cta-section {
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #007aff 0%, #0041c2 50%, #00c6fb 100%);
+      text-align: center; color: #fff;
+    }
+    .cta-section h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 12px; }
+    .cta-section p { opacity: 0.9; font-size: 1rem; margin-bottom: 32px; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+    /* Doctor Strip */
+    .doctor-strip {
+      background: #fff;
+      border-radius: 20px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 48px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      border: 1px solid #e8f0fe;
+    }
+    .doctor-strip__img {
+      width: 80px; height: 80px;
+      border-radius: 50%; object-fit: cover;
+      border: 3px solid #007aff;
+      flex-shrink: 0;
+    }
+    .doctor-strip__info h3 { font-size: 1.1rem; font-weight: 800; color: #1a1a2e; margin-bottom: 4px; }
+    .doctor-strip__info p { font-size: 0.85rem; color: #666; margin: 0; }
+    .doctor-strip__badge {
+      margin-left: auto;
+      background: linear-gradient(135deg, #007aff, #00c6fb);
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 10px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    @media (max-width: 640px) {
+      .doctor-strip { flex-direction: column; text-align: center; }
+      .doctor-strip__badge { margin-left: 0; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">
+          <img src="logo.png" alt="Ma Oral &amp; Dental Care" class="navbar__logo-img" />
+        </a>
+        <ul class="navbar__links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#appointment" class="navbar__cta">Book Appointment</a></li>
+        </ul>
+        <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SERVICES HERO -->
+  <section class="services-hero">
+    <div class="container">
+      <div class="section-header__tag" style="margin-bottom:16px;display:inline-block;">Our Dental Services</div>
+      <h1>Complete Dental Care <span>For Your Family</span></h1>
+      <p>Expert treatments by Dr. Md. Rezaul Karim Raki — delivered with compassion, precision, and affordable pricing.</p>
+      <div class="services-hero__breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Services</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="services-page">
+    <div class="container">
+
+      <!-- Intro paragraph -->
+      <div class="section-header" style="margin-bottom:8px;">
+        <div class="section-header__tag">Everything Your Smile Deserves</div>
+        <h2>Our <span>Dental Treatments</span></h2>
+        <p>We offer a comprehensive range of dental treatments using modern technology to ensure comfortable, effective, and lasting results for every patient.</p>
+        <div class="section-divider"><span class="section-divider__dot"></span></div>
+      </div>
+
+      <!-- Doctor Strip -->
+      <div class="doctor-strip">
+        <img src="dr_rezaul.png" alt="Dr. Md. Rezaul Karim Raki" class="doctor-strip__img" />
+        <div class="doctor-strip__info">
+          <h3>Dr. Md. Rezaul Karim Raki</h3>
+          <p>BDS (Rajshahi) · MPH (NIPSOM) · PGT Oral &amp; Maxillofacial Surgery (BSMMU) · BMDC Reg. No. 3856<br>
+          <strong>Assistant Professor</strong>, Udayan Dental College, Rajshahi</p>
+        </div>
+        <div class="doctor-strip__badge">Daily 5PM – 10PM</div>
+      </div>
+
+      <div class="services-grid-full">
+
+        <!-- Service 1 -->
+        <div class="service-card-pro">
+          <div class="service-card-pro__num">Service 01</div>
+          <img src="1.png" alt="Dental Check-Up" class="service-card-pro__img" />
+          <div class="service-card-pro__body">
+            <div class="service-card-pro__icon">🦷</div>
+            <h3>Dental Check-Up</h3>
+            <p>Comprehensive oral examination to detect problems early and maintain your overall dental health with personalized prevention advice.</p>
+            <a href="index.html#appointment" id="svc1-book-btn"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card-pro">
+          <div class="service-card-pro__num">Service 02</div>
+          <img src="2.png" alt="Teeth Cleaning &amp; Scaling" class="service-card-pro__img" />
+          <div class="service-card-pro__body">
+            <div class="service-card-pro__icon">✨</div>
+            <h3>Teeth Cleaning &amp; Scaling</h3>
+            <p>Professional scaling and polishing to remove plaque, tartar, and stains — leaving your teeth clean, bright, and healthy.</p>
+            <a href="index.html#appointment" id="svc2-book-btn"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card-pro">
+          <div class="service-card-pro__num">Service 03</div>
+          <img src="3.png" alt="Tooth Filling" class="service-card-pro__img" />
+          <div class="service-card-pro__body">
+            <div class="service-card-pro__icon">🦴</div>
+            <h3>Tooth Filling</h3>
+            <p>High-quality composite and amalgam fillings to restore decayed or damaged teeth, restoring function and natural appearance.</p>
+            <a href="index.html#appointment" id="svc3-book-btn"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card-pro">
+          <div class="service-card-pro__num">Service 04</div>
+          <img src="4.png" alt="Root Canal Treatment" class="service-card-pro__img" />
+          <div class="service-card-pro__body">
+            <div class="service-card-pro__icon">🩺</div>
+            <h3>Root Canal Treatment</h3>
+            <p>Pain-free root canal therapy by our OMS-trained surgeon to save and restore your natural tooth with long-lasting results.</p>
+            <a href="index.html#appointment" id="svc4-book-btn"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card-pro">
+          <div class="service-card-pro__num">Service 05</div>
+          <img src="5.png" alt="Tooth Extraction" class="service-card-pro__img" />
+          <div class="service-card-pro__body">
+            <div class="service-card-pro__icon">🦷</div>
+            <h3>Tooth Extraction</h3>
+            <p>Safe and painless extraction of damaged or impacted teeth performed with expert surgical precision and care.</p>
+            <a href="index.html#appointment" id="svc5-book-btn"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card-pro">
+          <div class="service-card-pro__num">Service 06</div>
+          <img src="6.png" alt="Dental Crowns &amp; Bridges" class="service-card-pro__img" />
+          <div class="service-card-pro__body">
+            <div class="service-card-pro__icon">👑</div>
+            <h3>Dental Crowns &amp; Bridges</h3>
+            <p>Durable porcelain crowns and bridges to restore missing or weakened teeth and protect damaged tooth structures.</p>
+            <a href="index.html#appointment" id="svc6-book-btn"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+          </div>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="service-card-pro">
+          <div class="service-card-pro__num">Service 07</div>
+          <img src="teeth_whitening.png" alt="Cosmetic Dentistry" class="service-card-pro__img" />
+          <div class="service-card-pro__body">
+            <div class="service-card-pro__icon">🌟</div>
+            <h3>Cosmetic Dentistry</h3>
+            <p>Transform your smile with professional teeth whitening, veneers, bonding, and complete smile makeover treatments.</p>
+            <a href="index.html#appointment" id="svc7-book-btn"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+          </div>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="service-card-pro">
+          <div class="service-card-pro__num">Service 08</div>
+          <img src="7.png" alt="Teeth Whitening" class="service-card-pro__img" />
+          <div class="service-card-pro__body">
+            <div class="service-card-pro__icon">💎</div>
+            <h3>Teeth Whitening</h3>
+            <p>Professional-grade whitening treatments to brighten your smile by several shades — safe, effective, and long-lasting.</p>
+            <a href="index.html#appointment" id="svc8-book-btn"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+          </div>
+        </div>
+
+        <!-- Service 9 -->
+        <div class="service-card-pro">
+          <div class="service-card-pro__num">Service 09</div>
+          <img src="8.png" alt="Gum Care" class="service-card-pro__img" />
+          <div class="service-card-pro__body">
+            <div class="service-card-pro__icon">❤️</div>
+            <h3>Gum Care (Periodontics)</h3>
+            <p>Diagnosis and treatment of gum disease — from gingivitis to advanced periodontal conditions — for long-term oral health.</p>
+            <a href="index.html#appointment" id="svc9-book-btn"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+          </div>
+        </div>
+
+        <!-- Service 10 -->
+        <div class="service-card-pro">
+          <div class="service-card-pro__num">Service 10</div>
+          <img src="dental_checkup.png" alt="Preventive Dental Care" class="service-card-pro__img" />
+          <div class="service-card-pro__body">
+            <div class="service-card-pro__icon">🛡️</div>
+            <h3>Preventive Dental Care</h3>
+            <p>Education, fluoride treatment, sealants, and regular monitoring to prevent dental problems before they begin.</p>
+            <a href="index.html#appointment" id="svc10-book-btn"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="section-header__tag" style="background:rgba(255,255,255,0.2);color:#fff;border:1px solid rgba(255,255,255,0.4);display:inline-block;margin-bottom:16px;">Ready to Visit?</div>
+      <h2>Book Your Dental Appointment Today</h2>
+      <p>Contact Dr. Md. Rezaul Karim Raki and let our team help you achieve the healthy, confident smile you deserve.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="tel:01716415402" class="btn btn--white" id="cta-call1-btn">
+          <i class="fa-solid fa-phone"></i> 01716-415402
+        </a>
+        <a href="tel:01920045021" class="btn btn--white" id="cta-call2-btn">
+          <i class="fa-solid fa-phone-volume"></i> 01920-045021
+        </a>
+        <a href="https://wa.me/8801716415402" target="_blank" class="btn btn--white" id="cta-whatsapp-btn">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+        </a>
+      </div>
+      <p style="margin-top:24px;opacity:0.8;font-size:0.88rem;">
+        <i class="fa-solid fa-clock"></i> &nbsp; Visiting Hours: Every Day 5:00 PM – 10:00 PM &nbsp;|&nbsp;
+        <i class="fa-solid fa-location-dot"></i> &nbsp; 637 Besh Villa, মানিকদী বাজার, ঢাকা ক্যান্টনমেন্ট, ঢাকা-১২০৬
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo"><span><i class="fa-solid fa-tooth"></i></span> মা ওরাল এন্ড ডেন্টাল কেয়ার</div>
+          <p>Healthy Smiles. Trusted Dental Care. — Dr. Md. Rezaul Karim Raki, BDS · MPH · PGT (OMS). Dhaka Cantonment.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Doctor</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#">&#x1F4CD; 637 Besh Villa, মানিকদী বাজার<br>ঢাকা ক্যান্টনমেন্ট, ঢাকা-১২০৬</a></li>
+            <li><a href="tel:01716415402">&#x1F4DE; 01716-415402</a></li>
+            <li><a href="tel:01920045021">&#x1F4DE; 01920-045021</a></li>
+            <li><a href="mailto:rezaul.karim16bds@gmail.com">&#x1F4E7; rezaul.karim16bds@gmail.com</a></li>
+            <li><a href="#" style="color:#007aff;">&#x1F55F; Daily 5:00 PM – 10:00 PM</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 মা ওরাল এন্ড ডেন্টাল কেয়ার &mdash; Dr. Md. Rezaul Karim Raki | BMDC Reg: 3856. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/8801716415402" target="_blank" class="whatsapp-float" id="whatsappFloat" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-float__tooltip">Chat with us!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

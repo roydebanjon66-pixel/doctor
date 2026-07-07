@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Dr. Md. Rezaul Karim Raki — Ma Oral &amp; Dental Care | Dhaka Cantonment</title>
+  <meta name="description" content="Learn about Dr. Md. Rezaul Karim Raki — BDS (Rajshahi), MPH (NIPSOM), Assistant Professor at Udayan Dental College, PGT in Oral &amp; Maxillofacial Surgery at BSMMU. BMDC Reg: 3856." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* About Page Specific Styles */
+    .about-hero {
+      padding: 140px 0 80px;
+      background: linear-gradient(135deg, #0a0e27 0%, #1a2a5e 60%, #0056d2 100%);
+      color: #fff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .about-hero h1 { font-size: 2.8rem; font-weight: 900; margin-bottom: 12px; }
+    .about-hero h1 span { color: #00c6fb; }
+    .about-hero p { font-size: 1.05rem; opacity: 0.85; max-width: 600px; margin: 0 auto 24px; }
+    .about-hero__breadcrumb { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.85rem; opacity: 0.7; }
+    .about-hero__breadcrumb a { color: #fff; text-decoration: none; }
+    .about-hero__breadcrumb span { color: #00c6fb; }
+
+    /* Doctor Detail Section */
+    .about-doctor { padding: 80px 0; background: #fff; }
+    .about-doctor__inner { display: grid; grid-template-columns: 400px 1fr; gap: 60px; align-items: start; }
+    .about-doctor__img-col { position: sticky; top: 100px; }
+    .about-doctor__img {
+      width: 100%; border-radius: 20px; object-fit: cover; height: 520px;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.15);
+    }
+    .about-doctor__img-badge {
+      background: linear-gradient(135deg, #007aff, #00c6fb);
+      color: #fff; border-radius: 16px; padding: 18px 22px; text-align: center;
+      margin-top: 24px; box-shadow: 0 8px 24px rgba(0,122,255,0.3);
+    }
+    .about-doctor__img-badge-num { font-size: 1.6rem; font-weight: 800; }
+    .about-doctor__img-badge-text { font-size: 0.8rem; opacity: 0.9; margin-top: 2px; }
+    .about-doctor__text h2 { font-size: 2.4rem; font-weight: 900; color: #1a1a2e; margin-bottom: 6px; }
+    .about-doctor__text h2 span { color: #007aff; }
+    .about-doctor__subtitle { color: #007aff; font-weight: 600; font-size: 1rem; margin-bottom: 20px; }
+    .about-doctor__text > p { color: #555; line-height: 1.9; font-size: 0.98rem; margin-bottom: 32px; }
+    .info-block { background: #f8faff; border-radius: 20px; padding: 28px; border: 1px solid #e8f0fe; margin-bottom: 24px; }
+    .info-block__title { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; color: #888; font-weight: 700; margin-bottom: 18px; display: flex; align-items: center; gap: 8px; }
+    .info-block__title i { color: #007aff; }
+    .info-block__title::after { content: ''; flex: 1; height: 1px; background: #dde7ff; }
+    .qual-item { display: flex; align-items: flex-start; gap: 12px; padding: 12px 0; border-bottom: 1px solid #eef2ff; }
+    .qual-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .qual-item__icon { width: 36px; height: 36px; border-radius: 10px; background: #fff; border: 1px solid #dde7ff; display: flex; align-items: center; justify-content: center; color: #007aff; font-size: 0.85rem; flex-shrink: 0; }
+    .qual-item__content strong { display: block; font-size: 0.8rem; color: #999; text-transform: uppercase; letter-spacing: 0.05em; }
+    .qual-item__content span { font-size: 0.92rem; color: #1a1a2e; font-weight: 600; }
+    .hours-block { background: linear-gradient(135deg, #007aff, #00c6fb); border-radius: 20px; padding: 28px; color: #fff; margin-bottom: 24px; }
+    .hours-block__title { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; opacity: 0.8; margin-bottom: 16px; }
+    .hours-block__time { font-size: 2rem; font-weight: 800; margin-bottom: 6px; }
+    .hours-block__day { opacity: 0.9; margin-bottom: 16px; }
+    .hours-block__phones { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.25); }
+    .hours-block__phone-btn { flex: 1; background: rgba(255,255,255,0.2); border-radius: 10px; padding: 12px 16px; text-align: center; color: #fff; text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: background 0.2s; min-width: 140px; }
+    .hours-block__phone-btn:hover { background: rgba(255,255,255,0.3); }
+    @media (max-width: 900px) {
+      .about-doctor__inner { grid-template-columns: 1fr; }
+      .about-doctor__img-col { position: static; }
+      .about-doctor__img { height: 380px; }
+      .about-doctor__text h2 { font-size: 1.9rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">
+          <img src="logo.png" alt="Ma Oral &amp; Dental Care" class="navbar__logo-img" />
+        </a>
+        <ul class="navbar__links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#appointment" class="navbar__cta">Book Appointment</a></li>
+        </ul>
+        <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ABOUT HERO BANNER -->
+  <section class="about-hero">
+    <div class="container">
+      <div class="section-header__tag" style="margin-bottom:16px;display:inline-block;">Meet Your Doctor</div>
+      <h1>Dr. Md. <span>Rezaul Karim Raki</span></h1>
+      <p>BDS (Rajshahi) · MPH (NIPSOM) · PGT Oral &amp; Maxillofacial Surgery — BMDC Reg. No. 3856</p>
+      <div class="about-hero__breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>About Doctor</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCTOR DETAIL -->
+  <section class="about-doctor">
+    <div class="container">
+      <div class="about-doctor__inner">
+
+        <!-- Left: Image + Badge -->
+        <div class="about-doctor__img-col">
+          <img src="dr_rezaul.png" alt="Dr. Md. Rezaul Karim Raki — Oral &amp; Dental Surgeon, Dhaka Cantonment" class="about-doctor__img" />
+          <div class="about-doctor__img-badge">
+            <div class="about-doctor__img-badge-num">BMDC Reg. No. 3856</div>
+            <div class="about-doctor__img-badge-text">Verified Dental Surgeon — Bangladesh</div>
+          </div>
+        </div>
+
+        <!-- Right: Info -->
+        <div class="about-doctor__text">
+          <div class="section-header__tag" style="display:inline-block;margin-bottom:10px;">Oral &amp; Dental Surgeon</div>
+          <h2>Dr. Md. <span>Rezaul Karim Raki</span></h2>
+          <div class="about-doctor__subtitle">
+            <i class="fa-solid fa-stethoscope"></i> &nbsp;
+            BDS · MPH · PGT (Oral &amp; Maxillofacial Surgery) · Assistant Professor
+          </div>
+
+          <p>
+            Dr. Md. Rezaul Karim Raki is a highly qualified and dedicated Oral &amp; Dental Surgeon with a strong academic background and advanced clinical training. He completed his BDS degree from the University of Rajshahi and further pursued his MPH from NIPSOM, Mohakhali. He holds the position of Assistant Professor at Udayan Dental College, Rajshahi, and completed his advanced Postgraduate Training (PGT) in Oral &amp; Maxillofacial Surgery at Bangabandhu Sheikh Mujib Medical University (BSMMU), PG Hospital.
+          </p>
+          <p>
+            At মা ওরাল এন্ড ডেন্টাল কেয়ার, Manikdi Bazar, Dhaka Cantonment, Dr. Rezaul Karim Raki provides expert dental care with a patient-first approach — offering everything from routine checkups to complex oral surgical procedures in a comfortable and hygienic environment.
+          </p>
+
+          <!-- Qualifications -->
+          <div class="info-block">
+            <div class="info-block__title"><i class="fa-solid fa-graduation-cap"></i> Academic Qualifications</div>
+
+            <div class="qual-item">
+              <div class="qual-item__icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="qual-item__content">
+                <strong>Bachelor of Dental Surgery</strong>
+                <span>BDS — University of Rajshahi, Bangladesh</span>
+              </div>
+            </div>
+
+            <div class="qual-item">
+              <div class="qual-item__icon"><i class="fa-solid fa-flask"></i></div>
+              <div class="qual-item__content">
+                <strong>Masters in Public Health</strong>
+                <span>MPH — NIPSOM, Mohakhali, Dhaka</span>
+              </div>
+            </div>
+
+            <div class="qual-item">
+              <div class="qual-item__icon"><i class="fa-solid fa-chalkboard-teacher"></i></div>
+              <div class="qual-item__content">
+                <strong>Academic Position</strong>
+                <span>Assistant Professor — Udayan Dental College, Rajshahi</span>
+              </div>
+            </div>
+
+            <div class="qual-item">
+              <div class="qual-item__icon"><i class="fa-solid fa-hospital"></i></div>
+              <div class="qual-item__content">
+                <strong>Postgraduate Training (PGT)</strong>
+                <span>Oral &amp; Maxillofacial Surgery — BSMMU (PG Hospital), Dhaka</span>
+              </div>
+            </div>
+
+            <div class="qual-item">
+              <div class="qual-item__icon"><i class="fa-solid fa-id-card"></i></div>
+              <div class="qual-item__content">
+                <strong>BMDC Registration</strong>
+                <span>BM &amp; DC Reg. No: 3856 — Verified Dental Surgeon</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visiting Hours -->
+          <div class="hours-block">
+            <div class="hours-block__title"><i class="fa-solid fa-clock"></i> Patient Visiting Hours</div>
+            <div class="hours-block__time">5:00 PM – 10:00 PM</div>
+            <div class="hours-block__day"><i class="fa-solid fa-calendar-check"></i> Every Day (Saturday – Thursday) &nbsp;|&nbsp; Friday: Closed</div>
+            <div class="hours-block__phones">
+              <a href="tel:01716415402" class="hours-block__phone-btn">
+                <i class="fa-solid fa-phone"></i> 01716-415402
+              </a>
+              <a href="tel:01920045021" class="hours-block__phone-btn">
+                <i class="fa-solid fa-phone-volume"></i> 01920-045021
+              </a>
+            </div>
+          </div>
+
+          <!-- Chamber Address -->
+          <div class="info-block">
+            <div class="info-block__title"><i class="fa-solid fa-location-dot"></i> Chamber Address</div>
+            <p style="font-size:0.98rem;line-height:2;color:#333;margin:0;">
+              <strong style="color:#1a1a2e;font-size:1rem;">মা ওরাল এন্ড ডেন্টাল কেয়ার</strong><br>
+              637 Besh Villa (৬৩৭ বেশ ভিলা)<br>
+              মানিকদী বাজার (Manikdi Bazar)<br>
+              ঢাকা ক্যান্টনমেন্ট (Dhaka Cantonment)<br>
+              ঢাকা-১২০৬, বাংলাদেশ
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;">
+            <a href="index.html#appointment" class="btn btn--blue" id="about-book-btn">
+              <i class="fa-solid fa-calendar-check"></i> Book Appointment
+            </a>
+            <a href="index.html#services" class="btn btn--outline" style="border-color:#007aff;color:#007aff;" id="about-services-btn">
+              <i class="fa-solid fa-tooth"></i> View Services
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE DR. REZAUL -->
+  <section class="why-us" id="why-us" style="padding:80px 0;">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__tag">Why Choose Dr. Rezaul</div>
+        <h2>Expert Care You Can <span>Trust</span></h2>
+        <p>Dr. Rezaul Karim Raki brings academic excellence and surgical expertise to every patient visit.</p>
+        <div class="section-divider"><span class="section-divider__dot"></span></div>
+      </div>
+      <div class="why-us__grid">
+        <div class="why-us__card">
+          <div class="why-us__icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>BDS + MPH + PGT</h3>
+          <p>Rare combination of clinical, academic, and public health expertise making Dr. Rezaul a truly comprehensive dental professional.</p>
+        </div>
+        <div class="why-us__card">
+          <div class="why-us__icon"><i class="fa-solid fa-hospital"></i></div>
+          <h3>BSMMU Trained Surgeon</h3>
+          <p>Advanced PGT in Oral &amp; Maxillofacial Surgery at Bangladesh's most prestigious medical institution.</p>
+        </div>
+        <div class="why-us__card">
+          <div class="why-us__icon"><i class="fa-solid fa-certificate"></i></div>
+          <h3>BMDC Verified</h3>
+          <p>Officially registered with the Bangladesh Medical &amp; Dental Council (BMDC Reg. No. 3856).</p>
+        </div>
+        <div class="why-us__card">
+          <div class="why-us__icon"><i class="fa-solid fa-clock"></i></div>
+          <h3>Daily Evening Hours</h3>
+          <p>Available every day from 5:00 PM to 10:00 PM — perfect for working professionals and families.</p>
+        </div>
+        <div class="why-us__card">
+          <div class="why-us__icon"><i class="fa-solid fa-bangladeshi-taka-sign"></i></div>
+          <h3>Affordable Treatment</h3>
+          <p>High-quality dental care at transparent and affordable prices — making oral health accessible for all.</p>
+        </div>
+        <div class="why-us__card">
+          <div class="why-us__icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <h3>Patient-First Approach</h3>
+          <p>Gentle, compassionate, and personalized care — each patient receives a tailored treatment plan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container--narrow">
+      <div class="contact__card">
+        <div class="contact__top">
+          <h2>&#x1F4CD; Find Us &amp; Book a Visit</h2>
+          <p>Dr. Md. Rezaul Karim Raki is here to serve you — visit us every evening at Manikdi Bazar, Dhaka Cantonment.</p>
+        </div>
+        <div class="contact__info">
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="contact__item-label">Primary Phone</div>
+              <div class="contact__item-val"><a href="tel:01716415402" style="color:inherit;text-decoration:none;font-weight:700;">01716-415402</a></div>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-solid fa-phone-volume"></i></div>
+            <div>
+              <div class="contact__item-label">Secondary Phone</div>
+              <div class="contact__item-val"><a href="tel:01920045021" style="color:inherit;text-decoration:none;font-weight:700;">01920-045021</a></div>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="contact__item-label">Clinic Address</div>
+              <div class="contact__item-val">637 Besh Villa, মানিকদী বাজার<br>ঢাকা ক্যান্টনমেন্ট, ঢাকা-১২০৬</div>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <div class="contact__item-label">Visiting Hours</div>
+              <div class="contact__item-val" style="color:#007aff;font-weight:700;">Every Day: 5:00 PM – 10:00 PM</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact__buttons">
+          <a href="tel:01716415402" class="btn btn--call" id="contact-call-btn">
+            <i class="fa-solid fa-phone"></i> Call Now
+          </a>
+          <a href="https://wa.me/8801716415402" target="_blank" class="btn btn--whatsapp" id="contact-whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo"><span><i class="fa-solid fa-tooth"></i></span> মা ওরাল এন্ড ডেন্টাল কেয়ার</div>
+          <p>Expert dental care by Dr. Md. Rezaul Karim Raki — BDS · MPH · PGT (OMS). Serving Dhaka Cantonment daily from 5 PM to 10 PM.</p>
+          <div class="footer__social">
+            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/8801716415402" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Doctor</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#">&#x1F4CD; 637 Besh Villa, মানিকদী বাজার<br>ঢাকা ক্যান্টনমেন্ট, ঢাকা-১২০৬</a></li>
+            <li><a href="tel:01716415402">&#x1F4DE; 01716-415402</a></li>
+            <li><a href="tel:01920045021">&#x1F4DE; 01920-045021</a></li>
+            <li><a href="mailto:rezaul.karim16bds@gmail.com">&#x1F4E7; rezaul.karim16bds@gmail.com</a></li>
+            <li><a href="#" style="color:#007aff;">&#x1F55F; Daily 5:00 PM – 10:00 PM</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 মা ওরাল এন্ড ডেন্টাল কেয়ার &mdash; Dr. Md. Rezaul Karim Raki | BMDC Reg: 3856. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/8801716415402" target="_blank" class="whatsapp-float" id="whatsappFloat" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-float__tooltip">Chat with us!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
